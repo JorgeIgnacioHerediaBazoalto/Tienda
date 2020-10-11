@@ -1,0 +1,153 @@
+* {
+    /**border: 2px solid;
+    border-color: rgb(0, 0, 0);
+	margin: 5px;*/
+}
+body {
+	background-color: #f8f7ff;
+	margin: 0px;
+}
+
+#logo {
+	clip-path: polygon(27% 22%, 12% 53%, 30% 81%, 79% 80%, 90% 46%);
+}
+
+#cabecera {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	background-image: url(https://images.pexels.com/photos/868110/pexels-photo-868110.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	background-position: center;
+	padding: 5px;
+	height: 820px;
+	border-bottom: 10px solid #d63230;
+}
+
+#contenedor{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	background-position: center;
+	padding: 5px;
+    background-color: rgba(218, 194, 228, 0.5);
+    width: 100%;
+    height: 100px;  
+}
+
+
+#nombre {
+	font-family: 'Permanent Marker', 'Arial';
+	font-size: 50px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+}
+
+#sectionPrincipal {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+#novedades {
+	background-image: url(https://images.pexels.com/photos/255501/pexels-photo-255501.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+	background-size: cover;
+	width: 400px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	align-content: flex-start;
+	padding: 10px;
+}
+
+#promociones {
+	border-radius: 20px;
+	background-color:  rgba(194, 228, 225, 0.8);
+	margin-bottom: 10px;
+	padding: 10px;
+	padding-bottom: 15px;
+}
+#loMasVendido{
+	background-color: rgba(194, 228, 225, 0.8);
+	border-radius: 20px;
+	padding: 10px;
+	padding-bottom: 15px;
+}
+
+#principio {
+	
+	margin: 10px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	align-content: flex-start;
+	padding: 10px;
+	/**background-image: url(https://images.pexels.com/photos/68525/soap-colorful-color-fruit-68525.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	background-size: cover;*/
+}
+
+/**#descripcionCorta {
+    padding-bottom: 20px;
+}**/
+
+#NoticiasYNovedades {
+	padding: 10px;
+	border-radius: 20px;
+	background-color: rgba(99, 191, 106, 0.6);
+	padding-bottom: 200px;
+	max-width: 1600px;
+}
+
+#descripcionCorta {
+	padding: 10px;
+	border-radius: 20px;
+	background-color: rgba(99, 191, 106, 0.6);
+	padding-bottom: 200px;
+	max-width: 1600px;
+}
+
+#nav1 {
+	font-family: 'Monoton display', 'Permanent Marker';
+	text-align: center;
+	color: #000000;
+}
+
+#nav1 a{
+	font-family: 'Piedra display', 'Permanent Marker';
+	color: #000000;
+	font-size: 25px;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+footer{
+	padding-top: 30px;
+	color: #ffffff;
+	background-color: #d63230;
+	height: 120px;
+	text-align: center;
+}
+footer p{
+	font-family: 'Monoton', cursive;
+	font-size: 20px;
+}
+
+footer a{
+	color: #ffffff;
+}

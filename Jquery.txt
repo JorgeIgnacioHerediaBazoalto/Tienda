@@ -1,0 +1,8 @@
+Doom = modelo de dominio de objetos.
+
+dominioo, dentro ede la paigna web, y dentro tienen objetos
+
+como darle un comportamiento a un objeto?
+
+objeto)= cualquier cosa que tenga atribujos y comportamiento
+

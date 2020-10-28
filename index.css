@@ -1,10 +1,5 @@
-* {
-    /**border: 2px solid;
-    border-color: rgb(0, 0, 0);
-	margin: 5px;*/
-}
 body {
-	background-color: #f8f7ff;
+	background-color: #ffffff;
 	margin: 0px;
 }
 
@@ -21,9 +16,10 @@ body {
 	align-content: center;
 	background-image: url(https://images.pexels.com/photos/868110/pexels-photo-868110.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 	background-position: center;
+	background-clip: padding-box;
 	padding: 5px;
 	height: 820px;
-	border-bottom: 10px solid #d63230;
+	border-bottom: 10px solid #0D378C;
 }
 
 #contenedor{
@@ -75,21 +71,35 @@ body {
 }
 
 #promociones {
+	text-align: center;
 	border-radius: 20px;
 	background-color:  rgba(194, 228, 225, 0.8);
 	margin-bottom: 10px;
 	padding: 10px;
 	padding-bottom: 15px;
 }
+
+#novedades h3{
+	font-family: 'Permanent Marker', 'Arial';
+	font-size: 25px;
+}
+
+#promos{
+	display: flex;
+	width: 400%;
+}
+
 #loMasVendido{
+	text-align: center;
 	background-color: rgba(194, 228, 225, 0.8);
 	border-radius: 20px;
 	padding: 10px;
 	padding-bottom: 15px;
 }
 
+
+
 #principio {
-	
 	margin: 10px;
     display: flex;
 	flex-direction: column;
@@ -98,28 +108,65 @@ body {
 	align-items: baseline;
 	align-content: flex-start;
 	padding: 10px;
-	/**background-image: url(https://images.pexels.com/photos/68525/soap-colorful-color-fruit-68525.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-	background-size: cover;*/
 }
 
-/**#descripcionCorta {
-    padding-bottom: 20px;
-}**/
+#principio h2 {
+	font-family: 'Permanent Marker', 'Arial';
+}
+
+#principio p {
+	font-family: 'Courgette', cursive;
+}
 
 #NoticiasYNovedades {
+	text-align: right;
+	font-size: 20px;
 	padding: 10px;
 	border-radius: 20px;
-	background-color: rgba(99, 191, 106, 0.6);
-	padding-bottom: 200px;
+	background-color: #F25C07;
+	margin-right: 200px;
 	max-width: 1600px;
 }
 
 #descripcionCorta {
+	font-size: 20px;
+	padding: 10px;
+	margin-left: 200px;
+	border-radius: 20px;
+	background-color: #2BA8D9;
+	max-width: 1600px;
+}
+
+#plus_principio {
+	font-size: 20px;
+	margin-top: 20px;
 	padding: 10px;
 	border-radius: 20px;
-	background-color: rgba(99, 191, 106, 0.6);
-	padding-bottom: 200px;
+	background-color: #00E82D;
+	margin-left: 200px;
 	max-width: 1600px;
+}
+
+#icon-service {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+#icon-service img {
+	margin: 50px;
+	margin-bottom: 0px;
+}
+
+#icon-service a {
+	font-family: 'Piedra display', 'Permanent Marker';
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0 0 0 10px #fff,
+				 0 15px 50px;;
 }
 
 #nav1 {
@@ -136,18 +183,84 @@ body {
 	border-radius: 5px;
 }
 
+a:hover {
+	animation: sup_click;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	position: relative;
+}
+
 footer{
 	padding-top: 30px;
 	color: #ffffff;
-	background-color: #d63230;
-	height: 120px;
+	background-color:#0D378C;
+	padding-bottom: 20px;
 	text-align: center;
 }
 footer p{
 	font-family: 'Monoton', cursive;
-	font-size: 20px;
+	font-size: 30px;
 }
 
 footer a{
 	color: #ffffff;
+	font-size: 40px;
+}
+
+@keyframes sup_click{
+	0% {color: #000000; left: 0px; top: -5px;}
+	25% {color: #FF0D0D; left: 0px; top: 5px;}
+	50% {color: #FFFC00; left: 0px; top: -5px;}
+	75% {color: #006914; left: 0px; top: 5px;}
+	100% {color: #000000;left: 0px; top: -5px;}
+}
+
+#c-slider {
+	margin: auto;
+	margin-bottom: 10px;
+	width: 90%;
+	box-shadow: 0 0 0 10px #fff,
+				0 15px 50px;
+	overflow: hidden;
+}
+
+#promos section {
+	width: 100%;
+}
+
+#promos section img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+#btn-prev, #btn-next {
+	width: 30px;
+	height: 30px;
+	background: rgba(194, 228, 225, 0.5);
+	position: absolute;
+	top: 145%;
+	line-height: 30px;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 50%;
+	font-family: monospace;
+	cursor: pointer;
+	opacity: 0.3;
+}
+
+#btn-prev {
+	left: 35px;
+}
+
+#btn-next {
+	right: 1120px;
+}
+
+#btn-prev:hover, #btn-next:hover {
+	background: rgba(194, 228, 225, 1);
+	opacity: 1;
 }

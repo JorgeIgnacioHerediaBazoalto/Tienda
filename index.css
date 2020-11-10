@@ -290,7 +290,7 @@ footer a{
 	height: 100%;
 }
 
-@media (max-width:420px) {
+@media (max-width:480px) {
 	#cabecera {
 		background-size: auto;
 		height: 400px;

@@ -5,7 +5,7 @@
     <meta charset='utf-8'>
     <title>Tienda-HB</title>
     <link href="index.css" rel="stylesheet">
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src=" https://code.jquery.com/jquery-3.5.1.min.js "></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Piedra&display=swap"> 
@@ -20,27 +20,55 @@
         </section>
 
         <nav id="nav1">
-            <a href="pass">Catalogo</a>
-            |
-            <a href="pass">Delivery</a>
-            |
-            <a href="pass">Yapita!</a>
-            |
-            <a href="pass">¿Quienes somos?</a>
-            |
-            <a href="pass">Iniciar sesión</a>
-            |
-            <a href="pass">Registrate</a>
+            <ul class="menu">
+                <li>
+                    <a href="pass">Catalogo</a>
+                    <ul class="submenu">
+                        <li><a>Alimentos</a></li>
+                        <li><a>Bebidas</a></li>
+                        <li><a>Limpieza</a></li>
+                        <li><a>Ropa</a></li>
+                        <li><a>Otros</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="pass">Delivery</a>
+                    <ul class="submenu">
+                        <li><a>Normal</a></li>
+                        <li><a>Express</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="pass">Yapita!</a>
+                    <ul class="submenu">
+                        <li><a>Puntos Yapita</a></li>
+                        <li><a>Compras grandes</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="pass">¿Quienes somos?</a>
+                    <ul class="submenu">
+                        <li><a href="contacto.html">Contactanos</a></li>
+                        <li><a>Diseñadores</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="pass">Iniciar sesión</a>
+                </li>
+                <li>
+                    <a href="pass">Registrate</a>
+                </li>
+            </ul>
         </nav>
         </div>
     </header>
 
     <section id="sectionPrincipal">
-        <aside id="novedades">
-            <article id="promociones">
+        <aside id="novedades" class="izquierda">
+            <article class="promociones">
                 <h3>Promociones</h3>
-                <div id="c-slider">
-                    <div id="promos">
+                <div class="c-slider">
+                    <div class="promos">
                         <section>
                             <img src="https://pbs.twimg.com/media/DvW5lgKWsAAZ0eS.jpg" alt="esto es una imagen" width="300px" id="promos">
                         </section>
@@ -53,21 +81,32 @@
                         <section>
                             <img src="https://images.pexels.com/photos/1289363/pexels-photo-1289363.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="esto es una imagen" width="300px" id="promos">
                         </section>
-                        <div id="btn-prev">&#60;</div>
-                        <div id="btn-next">&#62;</div>
                     </div>
                 </div>
             </article>
-            <article id="loMasVendido">
+            <article class="promociones">
                 <h3>Lo mas vendido</h3>
-                <div>
-                    <img src="https://i.blogs.es/8fdd98/ps51/450_1000.jpeg" alt="esto es una imagen" width="300px" id="p">
+                <div class="c-slider">
+                    <div class  ="promos">
+                        <section>
+                            <img src="https://i.blogs.es/8fdd98/ps51/450_1000.jpeg" alt="esto es una imagen" width="300px" id="promos">
+                        </section>
+                        <section>
+                            <img src="https://i.blogs.es/8fdd98/ps51/450_1000.jpeg" alt="esto es una imagen" width="300px" id="promos">
+                        </section>
+                        <section>
+                            <img src="https://i.blogs.es/8fdd98/ps51/450_1000.jpeg" alt="esto es una imagen" width="300px" id="promos">
+                        </section>
+                        <section>
+                            <img src="https://i.blogs.es/8fdd98/ps51/450_1000.jpeg" alt="esto es una imagen" width="300px" id="promos">
+                        </section>
+                    </div>
                 </div>
             </article>
         </aside>
 
         <section id="principio">
-            <article id="descripcionCorta">
+            <article id="descripcionCorta" class="derecha">
                 <h2>¿QUIENES SOMOS?</h2>
                 <p>
                     Somos una tienda inovadora de Bolivia para Bolivia, buscando la actualizacion de nuestra querida tierra...
@@ -84,6 +123,7 @@
             <section id="plus_principio">
                 <h2>NUESTROS SERVICIOS</h2>
                 <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur voluptatibus incidunt cumque. Neque cum quae dolore, quisquam eum autem vel qui! Vel, labore. Quo nemo, consequatur maiores totam incidunt nisi!
                     Para poder brindarle el mejor servicio posible y mejorar su experiencia tenemos diferentes servicios, que usted podra escoger de acuerdo a su conveniencia:
                 </p>
                 <div id="icon-service">
@@ -107,27 +147,7 @@
         
     </footer>
     <script defer src="https://friconix.com/cdn/friconix.js"> </script> 
-    <script>
-        function suma(n1, n2) {
-            return n1+n2;         
-        }
-        function resta(n1, n2) {
-            return n1-n2;
-        }
-        function multiplicacion(n1, n2) {
-            return n1*n2;
-        }
-        function division(n1, n2) {
-            return n1/n2;
-        }
-        function modulo(n1, n2) {
-            return n1%n2;
-        }
-        //function sumarVariosNumeros(n1){
-            //while (n1 != 0) {
-            //    n1 = inp
-          //  }
-        //}
+    <script src="index.js">
     </script>
     <script src="slider.js"></script>
 </body>
